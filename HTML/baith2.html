@@ -6,25 +6,46 @@
 table, th, td{
     border: 2px solid burlywood;
     background-color: aqua;
+    
+}
+.main{
+    float: none;
+    width: 40%;
+}
+.right{
+    float: left;
+    width: 20%;
+    padding: 10px 15px ;
+    margin-top: 7px;
+
 }
 @media only screen and (max-width:800px){
     /* dành cho máy tính bảng*/
-    .table, th, td{
-        width: 80%;
+    .main{
+        width: 50%;
         padding: 0%;
     }
+    .right{
+        width: 100%;
+    }
+    
 }
 @media only screen and(max-width:500px){
-    .table, th, td{
+    .main{
+        width: 80%;
+    }
+    .right{
+        float: left;
         width: 100%;
+
     }
 }
 </style>
 </head>
 <body>
-    <h1 class="table" style="color: aqua;">khoa CNTT HUMG</h1>
-    <p class="table" style="text-align: left;">departments</p>
-    <div class="table">
+    <h1 class="main" style="color: aqua;">khoa CNTT HUMG</h1>
+    <p class="main" style="text-align: center;">departments</p>
+    <div class="main">
         <table>
             <tr>
                 <th>stt</th>
@@ -56,9 +77,9 @@ table, th, td{
             </tr>
         </table>
     </div>
-    <div>
+    <div class="main">
         <h1>CHUYÊN NGÀNH TRONG KHOA </h1>
-        <ul>
+        <ucul>
             <li>CNTT địa học</li>
             <li>KHKT</li>
             <li>CNPM</li>
@@ -66,9 +87,9 @@ table, th, td{
             <li>httt</li>
         </ul>
     </div>
-    <div>
-        <h1>trương đình văn 2121051389</h1>
-        <p><img src="https://hdlivewall.com/wp-content/uploads/2022/07/Nikke-The-Goddess-of-Victory.jpg" width="50%" height="50%" alt="nikke"></p>
+    <div class="right">
+        <h3>trương đình văn 2121051389</h3>
+        <p><img src="https://hdlivewall.com/wp-content/uploads/2022/07/Nikke-The-Goddess-of-Victory.jpg" width="100%" height="100%" alt="nikke"></p>
     </div>
 </body>
 </html>
