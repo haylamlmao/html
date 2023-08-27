@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trương đình văn 2121051389</title>
+</head>
+<body>
+    <p>thời gian đã làm: <output id="result"></output></p>
+    <button onclick="startWorker()">startworker</button>
+    <button onclick="stopWorker()">stopworker</button>
+    <p><strong>note:</strong>phiên bản chình duyệt từ 9 trở lên k hỗ trợ webworker</p>
+    <script>
+        var w;
+        function startWorker(){
+            if(typeof(Worker) !=="undefined"){
+                if(typeof(w) == "undefined"){
+                    w = new Worker("demo_worker.js");
+                }
+                w.onmessage = function(event){
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            }else{
+                document.getElementById("result").innerHTML = "phiên bản k phù hợp";
+            }
+        }
+        function stopworker(){
+            w.terminate();
+            w = undefined;
+        }
+    </script>
+    <p>trương đình văn 2121051389</p>
+</body>
+</html>
