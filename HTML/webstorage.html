@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trương đình văn 2121051389</title>
+<script>
+    function bodem(){
+        if(typeof(Storage) !=="undefined"){
+            if(localStorage.bodem) {
+                localStorage.bodem = Number(localStorage.bodem)+1;
+        }else{
+            localStorage.bodem = 1;
+        }
+         document.getElementById("van").innerHTML = "số lần đã bấm "+ localStorage.bodem +"time(s).";
+    }else{
+        document.getElementById("van").innerHTML = "erro" 
+
+    }
+}
+</script>
+</head>
+<body>
+    <p><button onclick="bodem()" type="button"> nút </button></p>
+    <div id="van"></div>
+    <p>bấm vào nút để đếm  </p>
+    <p>trương đình văn 2121051389</p>
+</body>
+</html>
