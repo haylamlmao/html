@@ -15,7 +15,7 @@
             alert("vui lòng nhập thông tin ");
             return false;
         }
-        if(hovaten.lenght<8){
+        if(hovaten.length<8){
             alert("vui lòng nhập tên đăng nhâp hợp lệ !");
             return false;
         }
@@ -27,7 +27,7 @@
             alert("mật khẩu không trùng khớp");
             return false;
         }
-        if(sdt.lenght!==10){
+        if(sdt.length!==10){
             alert("vui lòng nhập std đúng");
             return false;
         }
@@ -38,12 +38,12 @@
 </head>
 <body>
     <form id="form" onsubmit="return kiemtraform()" >
-        <input type="text" autofocus placeholder="nhập họ và tên" id="hovaten"><br>
-        <input type="text" autofocus placeholder="tên đăng nhập" id="tendangnhap"><br>
-        <input type="password" autofocus placeholder="mật khẩu" id="password"><br>
-        <input type="password" autofocus placeholder="nhập lại mật khẩu" id="passwordx2"><br>
-        <input type="text" autofocus placeholder="nhập email" id="email"><br>
-        <input type="text" autofocus placeholder="nhập sdt" id="sdt"><br>
+        <input type="text" autofocus placeholder="nhập họ và tên" name="hovaten" id="hovaten"><br>
+        <input type="text" autofocus placeholder="tên đăng nhập"  name="tendangnhap" id="tendangnhap"><br>
+        <input type="password" autofocus placeholder="mật khẩu" name="password" id="password"><br>
+        <input type="password" autofocus placeholder="nhập lại mật khẩu" name="passwordx2" id="passwordx2"><br>
+        <input type="text" autofocus placeholder="nhập email" name="email" id="email"><br>
+        <input type="text" autofocus placeholder="nhập sdt" name="sdt" id="sdt"><br>
         <input type="submit" value="đăng ký">
     </form>
 </body>
