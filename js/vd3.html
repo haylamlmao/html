@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         document.addEventListener('DOMContentLoaded',function(){
-            document.querySelector('#tinh').onsubmit = function(){
-                var a = document.querySelector('#a').value;
-                var b = document.querySelector('#b').value;
-                alert('');
+            document.querySelector('#tinh').onsubmit = function(event){
+                event.preventDefault();
+                var a = parseFloat(document.querySelector('#a').value);
+                var b = parseFloat(document.querySelector('#b').value);
+                if(true){
+                    var tong = a +b ;
+                    alert('a+b='+tong);
+                }
             };
         })
     </script>
@@ -19,7 +23,7 @@
         <input type="text" id="a" autofocus placeholder="nhập vào số a "><br>
         <input type="text" id="b" autofocus placeholder="nhập vào số b ">
         <p>tổng a và b là : </p>
-        <button></button>
+        <button type="submit">tính</button>
     </form>
 </body>
 </html>
