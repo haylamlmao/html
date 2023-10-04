@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#form').onsubmib= sayhello;
+
+        });
+        function sayhello(){
+            const name = document.querySelector('#name').value;
+                alert('say ${name}');
+        }
+    </script>
+    
+</head>
+<body>
+    <form id ="form">
+        <input type="text " id="name" autofocus placeholder="Name">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
