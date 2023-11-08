@@ -43,17 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     }elseif($D==1){
         echo"phương trình có 1 nghiệm kép";
     }
-}
-?>
-<?php
-    #SỬ DỤNG HÀM SUBSTR-COUNT ĐỂ ĐẾM SỐ LẦN XUẤT HIỆN
-    $chuoi = "chung tôi là sinh viên trường đại học mỏ địa chất";
-    $soLanXuatHien = substr_count($chuoi, 'h');
-
-    echo "<br>Số lần xuất hiện của chữ 'h' là: " . $soLanXuatHien;
-?>
-<?php
-    if($_SERVER["REQUEST_METHOD"] == "POST") {
+if($_SERVER["REQUEST_METHOD"] == "POST") {
         $hu = $_POST["hu"];
         $hi = $_POST["hi"];
         if($hu==$hi){
@@ -62,6 +52,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
             echo"đây là hình chữ nhật";
         }
     }
+}
+?>
+<?php
+    #SỬ DỤNG HÀM SUBSTR-COUNT ĐỂ ĐẾM SỐ LẦN XUẤT HIỆN
+    $chuoi = "chung tôi là sinh viên trường đại học mỏ địa chất";
+    $soLanXuatHien = substr_count($chuoi, 'h');
+
+    echo "<br>Số lần xuất hiện của chữ 'h' là: " . $soLanXuatHien;
 ?>
 </body>
 </html>
