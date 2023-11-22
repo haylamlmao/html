@@ -17,9 +17,32 @@
         $ly = $_POST["ly"];
         $hoa = $_POST["hoa"];
         $diemtb = ($toan + $ly + $hoa)/3;
-        if $diemtb <$cntt{
-            echo"lmao";
-        }
+        $diemtb = ($toan + $ly + $hoa)/3;
+        if ($diemtb > $cntt) {
+            echo"bạn chúng tuyển ngành cntt"; 
+        }else{
+            echo"bạn đã chượt chuyên ngành cntt";
+        };
+        if ($diemtb >$cnttcls){
+            echo"bạn đã chúng tuyển ngành cnttclc";
+        }else{
+            echo"bạn đã trượt";
+        };
+        if ($diemtb > $khdl){
+            echo"bạn đã chúng tuyển ngàng khdl";
+        }else{
+            echo"bạn đã trượt";
+        };
+        if ($diemtb > $diachat){
+            echo"bạn đã chúng tuyển ngàng địa chất";
+        }else{
+            echo"bạn đã trượt";
+        };
+        if ($diemtb > $moitruong){
+            echo"bạn đã chúng tuyển ngàng môi trường";
+        }else{
+            echo"bạn đã trượt";
+        };
     }
     ?>
 </body>
